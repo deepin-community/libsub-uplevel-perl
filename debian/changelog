@@ -1,0 +1,250 @@
+libsub-uplevel-perl (0.2800-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 11:51:57 +0100
+
+libsub-uplevel-perl (0.2800-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Remove Fabrizio Regalli from Uploaders. Thanks for your work!
+  * Remove Jay Bonci from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.2800
+  * Update years of upstream copyright
+  * Update years of Debian packaging copyright
+  * Bump debhelper compatibility level to 10
+  * Declare compliance with Debian Policy 4.0.0
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Sat, 24 Jun 2017 22:49:26 -0300
+
+libsub-uplevel-perl (0.2600-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.2600
+  * Update debian/upstream/metadata
+  * Update years of upstream copyright
+  * Update Debian packaging copyright
+  * Bump debhelper compatibility level to 9
+  * Declare compliance with Debian policy 3.9.8
+  * debian/control: wrap-and-sort Uploaders field
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Sun, 07 Aug 2016 22:21:04 -0300
+
+libsub-uplevel-perl (0.2500-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.2500
+  * Update copyright years
+  * Declare compliance with Debian Policy 3.9.6
+  * Mark package autopkgtest-able
+  * Drop examples-shebang.patch, resolved upstream by removing x-bit
+
+ -- Florian Schlichting <fsfs@debian.org>  Mon, 14 Sep 2015 21:46:48 +0200
+
+libsub-uplevel-perl (0.2400-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ Fabrizio Regalli ]
+  * Imported Upstream version 0.2400
+  * Added myself to Uploaders and Copyright
+  * Bump Standards-Version to 3.9.2 (no changes needed)
+  * Removed no more necessary --with quilt option from d/rules
+  * Bump debhelper to (>= 8)
+  * Updated d/compat to 8
+  * Removed quilt (>= 0.46-7) from B-D
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Updated d/copyright to latest .174 DEP5 format
+  * Removed no more necessary README.source
+  * Removed no more necessary libsub-uplevel-perl.docs
+  * Updated copyright year for main stanza
+  * Fixed path for GPL-1+ license in d/copyright
+  * Removed 'GNU/Linux' from license text
+
+ -- Fabrizio Regalli <fabreg@fabreg.it>  Tue, 21 Feb 2012 17:07:47 +0100
+
+libsub-uplevel-perl (0.2200-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.3 (drop perl version dependency)
+  * Add myself to Uploaders and Copyright
+  * Use new short debhelper rules file
+  * Refresh copyright information
+
+  [ gregor herrmann ]
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * debian/control: remove build dependencies that are not used anymore.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Tue, 17 Nov 2009 13:04:04 -0500
+
+libsub-uplevel-perl (0.2002-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set Standards-Version to 3.8.0; add debian/README.source to document quilt
+    usage.
+  * debian/control:
+    - switch Vcs-Browser field to ViewSVN
+    - change my email address
+    - remove build dependency on libmodule-build-perl, dh7 prefers MakeMaker.
+  * debian/copyright: switch to new format.
+  * Set debhelper compatibility level to 7; adapt
+    debian/{control,compat,rules}.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 23 Nov 2008 15:19:58 +0100
+
+libsub-uplevel-perl (0.1901-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    - add uversionmangle to deal with 2/4-digits upstream versions
+    - extend regexp for mathing upstream tarballs.
+  * Set debhelper compatibility level to 6.
+  * debian/copyright: update years of copyright.
+  * debian/rules:
+    - use $(PERL) instead of perl
+    - remove some comments and empty lines
+    - remove AUTHOR_TESTING evnironment variable, not used anymore by
+      upstream tests
+    - re-enable most author tests by passing --test_files to Build test; add
+      libtest-perl-critic-perl to Build-Depends-Indep
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sun, 17 Feb 2008 16:51:44 +0100
+
+libsub-uplevel-perl (0.18-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Taking over Jay Bonci with his permission.
+    http://lists.debian.org/debian-perl/2007/11/msg00134.html
+    + Set Maintainer to Debian Perl Group.
+  * Use dist-based URL in debian/watch.
+  * debian/copyright: update according to README.
+  * Set debhelper compatibility level to 5.
+  * Move perl from Build-Depends to Build-Depends-Indep.
+  * debian/rules:
+    - Move tests to build target and enable additional tests.
+    - Remove variable OPTMIMIZE, we don't compile anything.
+    - Use DESTDIR and PREFIX for $(MAKE) install.
+    - Introduce build-stamp target and dependencies between targets.
+    - Remove some comments and empty lines.
+    - Remove unneeded calls to dh_link and dh-strip.
+
+  [ Damyan Ivanov ]
+  * debian/rules:
+    + switch to Build.PL
+    + introduce also install-stamp
+    + add dh_installexamples examples/*
+    + drop unneeded dh_installdirs
+    + drop removal of emppty usr/lib/perl5
+  * Added libmodule-build-perl to Build-Depends
+  * Bump standards-version to 3.7.3 (no changes)
+  * Wrap long control fields
+  * Put me instead of Gregor in Uploaders
+  * New examples-shebang.patch -- add "#!/usr/bin/perl" to examples.
+    Reported upstream as http://rt.cpan.org/Public/Bug/Display.html?id=31403
+    + Add quilt to Build-Depends
+    + Add quilt support to debian/rules
+
+ -- Damyan Ivanov <dmn@debian.org>  Wed, 12 Dec 2007 12:55:00 +0200
+
+libsub-uplevel-perl (0.14-1) unstable; urgency=low
+
+  * New upstream release
+  * Fixed watchfile so uscan will work
+  * Ack'd NMU. Thanks Gunnar. (Closes: #363009)
+  * Bumped standards version to 3.7.2.2 (No other changes)
+  * Minor fix to rules file to only conditionally ignore make clean errors for lintian
+  * Build-Depends-Indep to Build-Depends to satisfy lintian
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue, 03 Jul 2007 13:15:38 -0400
+
+libsub-uplevel-perl (0.09-2.1) unstable; urgency=low
+
+  * Non-Maintainer Upload by Gunnar Wolf
+  * Applied patch by Martin Ferrari, checking for definedness (which was
+    in turn breaking other packates). (Closes: #363009)
+  * Bumped up standards-version to 3.6.2
+
+ -- Gunnar Wolf <gwolf@debian.org>  Fri, 21 Apr 2006 12:21:46 -0500
+
+libsub-uplevel-perl (0.09-2) unstable; urgency=low
+
+  * Fixed watch file so uscan will actually work
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed,  6 Oct 2004 03:06:39 -0400
+
+libsub-uplevel-perl (0.09-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 19 Jul 2004 08:20:07 -0400
+
+libsub-uplevel-perl (0.08-1) unstable; urgency=low
+
+  * New Upstream Version.
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 17 Nov 2003 11:05:53 -0500
+
+libsub-uplevel-perl (0.07-2) unstable; urgency=low
+
+  * Updated maintainer address
+  * Bumped up policy version (no other changes)
+  * Added watch file
+  * Changed copyright url to be not dependant on the module version
+  * Added compat file per debhelper best practices
+
+ -- Jay Bonci <jaybonci@debian.org>  Fri, 10 Oct 2003 14:31:20 -0400
+
+libsub-uplevel-perl (0.07-1) unstable; urgency=low
+
+  * Initial Release (Closes: #178018)
+
+ -- Jay Bonci <jay@bonci.com>  Wed,  16 July 2003 08:58:18 -0500

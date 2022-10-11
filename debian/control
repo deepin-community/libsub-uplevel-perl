@@ -1,0 +1,23 @@
+Source: libsub-uplevel-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: perl
+Standards-Version: 4.0.0
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libsub-uplevel-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libsub-uplevel-perl.git
+Homepage: https://metacpan.org/release/Sub-Uplevel
+
+Package: libsub-uplevel-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: module to spoof the Perl call stack
+ Sub::Uplevel is a Perl module that provides a safe implementation similar to
+ Tcl's uplevel() function. It allows you to safely fool the caller() into
+ thinking it's in a different part of the stack, without knowing that it is
+ being wrapped.
